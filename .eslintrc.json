@@ -12,6 +12,9 @@
       "LabeledStatement",
       "WithStatement"
     ]
-  }
+  },
+  "parserOptions": {
+        "sourceType": "module"
+    }
   
 }
