@@ -4,22 +4,19 @@ export class BoardGame {
         this.fieldsize = fieldsize;
         this.board = document.body;
         this.arr = []
-        
+       
+
+    }
+
+    addBoard() {
+        console.log(this.fieldsize);
         for ( let i = 0; i < this.fieldsize * 4; i +=1 ){
             const cell = document.createElement('div');
             cell.classList.add('cell');
-            cell.addEventListener('click', (event) => {
-                this.clickCell(event)
-            })       
-            
             this.board.appendChild(cell);
-            
         }
-        
-
-        this.cells = Array.from(document.querySelectorAll('.cell'));
-
     }
+
 
     clickCell(event){
         event.target.classList.remove('goblin');
@@ -36,8 +33,8 @@ export class BoardGame {
         return this.arr[0] ;
     }
 
-    goblinActive(cell) {
-        this.cells[cell].classList.remove('goblin');
+    goblinActive(cell, cells) {
+        cells[cell].classList.remove('goblin');
     }
 
     
