@@ -1,0 +1,1 @@
+import{BoardGame}from"../class/boardgame.js";const board=new BoardGame(4);setInterval((()=>{for(let a in board.cells){let o=Math.floor(Math.random()*a);board.cells[o].classList.toggle("goblin")}}),1e3);

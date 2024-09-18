@@ -1,0 +1,1 @@
+const place=document.querySelector(".goblin"),game=document.querySelector(".game");setInterval((()=>{for(let e of game.children){let l=Math.floor(4*Math.random());e.children[l].append(place),e.children[l]===e.lastElementChild&&e[0].children[l].append(place)}}),1e3);
