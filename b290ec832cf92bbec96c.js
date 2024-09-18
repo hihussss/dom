@@ -1,1 +1,0 @@
-import{BoardGame}from"../class/boardgame";import{TableRezult}from"../class/tablerezult";const board=new BoardGame(4),tablerezult=new TableRezult;setInterval((()=>{setTimeout((()=>{board.cells[board.nowCell()].classList.add("goblin")}),1e3),board.goblinActive(board.lastCell())}),2e3),document.querySelector(".cell").addEventListener("click",(()=>{tablerezult.score()}));

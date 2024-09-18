@@ -1,1 +1,0 @@
-import{BoardGame}from"../class/boardgame.js";const board=new BoardGame(4);setInterval((()=>{setTimeout((()=>{board.cells[board.nowCell()].classList.add("goblin")}),1e3),board.goblinActive(board.lastCell())}),2e3);
